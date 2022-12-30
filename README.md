@@ -31,7 +31,7 @@ Tüm Kurulum adım adım proje debug süreci aşağıdaki adımları izleyebilir
 
 ## Dotnet-Run-Sureci
 ```
- $dotnet new mvc -o ProjectName 
+ $dotnet new mvc -o GazliIcecekProject
  $dotnet build 
  $dotnet run 
  $dotnet ef migrations add CreateGazliIcecekDb

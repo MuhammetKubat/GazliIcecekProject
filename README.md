@@ -61,4 +61,5 @@ Tüm Kurulum adım adım proje debug süreci aşağıdaki adımları izleyebilir
 - 💞️ I’m looking to collaborate on __-
 - 📫 How to reach me @
 
-
+## Detail-Design-Açıklama  
+![image](https://user-images.githubusercontent.com/38388188/210100624-159d6470-f056-4a6f-b55e-86d7e4fb3a49.png)

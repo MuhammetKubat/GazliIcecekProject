@@ -12,11 +12,11 @@ Bu proje C# & Visual Code ile GazlicecekEnverter app yapılmıştır.
 	
 ## Teknoloji-Pac.
 Proje aşağıdaki packages onuşturulmuştur;
-package list for sqlServer----
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.2">
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
+package list for sqlServer
+    "Microsoft.EntityFrameworkCore" Version="6.0.2"
+   "Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.2" 
+    "Microsoft.EntityFrameworkCore.Tools" Version="6.0.2"
+  "Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2"
 
 
 ## Setup-Kurulum

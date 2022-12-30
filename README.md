@@ -1,21 +1,21 @@
 - 👋 Hi, I’m @MuhammetKubat
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+- 👀 I’m interested in VsCode 
+- 🌱 I’m currently learning C#
+- 💞️ I’m looking to collaborate on __-
+- 📫 How to reach me @
 
+## Table of contents
+* [ Genel Bilgi ](#Genel-Bilgi )
+* [Teknoloji Pac.](#Teknoloji-Pac.)
+* [Setup | Kurulum](#Setup-Kurulum)
+* [Dotnet-Run-Sureci](#Dotnet-Run-Sureci)
+* [Detail | Design |Açıklama ](#Detail-Design-Açıklama )
 
-1.Install .NET on Windows|
-	✔️ Supported	 |
-          7 (STS)	 |
-          6 (LTS)	 |
--------------------------|
-
-1.VSCode - https://code.visualstudio.com/Download
-2.NET Coding Pack - https://aka.ms/dotnet-coding-pack-win
-3.NET Extension Pack - vscode:extension/ms-dotnettools.vscode-dotnet-pack
-4.NET SDK-x64 - https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.101-windows-x64-installer
-5.SQL2019-SSEI-Expr-https://www.cozumpark.com/sql-server-2019-kurulumu/
+## Genel Bilgi 
+Bu proje C# & Visual Code ile GazlicecekEnverter app yapılmıştır.
+	
+## Teknoloji-Pac.
+Proje aşağıdaki packages onuşturulmuştur;
 -----------------------------------------------------------------------------------
 package list for sqlServer----
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.2" />
@@ -23,18 +23,33 @@ package list for sqlServer----
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.2">
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
 -------------------------------------------------------------------------------------
- dotnet new mvc -o ProjectName 
------------------------------------------------------------------------------------ 
- dotnet build 
- dotnet run 
- dotnet ef migrations add CreateGazliIcecekDb
- dotnet ef dbcontext scaffold "Server=MAMIOFFICAL\SQLEXPRESS;Database=GazliIcecek;Trusted_Connection=True;Encrypt=False;" Microsoft.EntityFrameworkCore.SqlServer -o Models
- dotnet ef database update
 
-<!---
-MuhammetKubat/MuhammetKubat is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+## Setup-Kurulum
+Tüm Kurulum adım adım proje debug süreci aşağıdaki adımları izleyebilirsiniz?
+* 1.VSCode - https://code.visualstudio.com/Download
+*2.NET Coding Pack - https://aka.ms/dotnet-coding-pack-win
+*3.NET Extension Pack - vscode:extension/ms-dotnettools.vscode-dotnet-pack
+*4.NET SDK-x64 - https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.101-windows-x64-installer
+*5.SQL2019-SSEI-Expr-https://www.cozumpark.com/sql-server-2019-kurulumu/
+	
+
+1.Install .NET on Windows|
+	✔️ Supported	 |
+          7 (STS)	 |
+          6 (LTS)	 |
+-------------------------|
+
+
+## Dotnet-Run-Sureci
+```
+ $dotnet new mvc -o ProjectName 
+ $dotnet build 
+ $dotnet run 
+ $dotnet ef migrations add CreateGazliIcecekDb
+ $dotnet ef dbcontext scaffold "Server=MAMIOFFICAL\SQLEXPRESS;Database=GazliIcecek;Trusted_Connection=True;Encrypt=False;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+ $dotnet ef database update
+```
+
 ![WhatsApp Image 2022-12-24 at 1 45 28 PM](https://user-images.githubusercontent.com/38388188/210081736-af9125cb-b19d-4acf-8a65-1e5bf38258a9.jpeg)
 ![WhatsApp Image 2022-12-24 at 1 45 00 PM](https://user-images.githubusercontent.com/38388188/210081738-f40a6569-d2ab-4af0-ab68-d59026267f77.jpeg)
 ![WhatsApp Image 2022-12-24 at 1 44 49 PM](https://user-images.githubusercontent.com/38388188/210081740-cbf464ca-7fdd-4f4f-817a-2695c17cea32.jpeg)

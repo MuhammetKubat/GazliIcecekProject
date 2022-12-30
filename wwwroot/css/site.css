@@ -1,0 +1,98 @@
+html {
+  font-size: 14px;
+  
+}
+tbody.scrollContent 
+{
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 60px;
+
+}
+
+.scrollContent tr td 
+{
+    border: #fdfffe 1px solid;
+    padding-right: 0px;
+    vertical-align: center;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color:#581548;
+  margin-bottom: 60px;
+}
+
+thead{
+   font-size:small;
+   color: #ffffff;
+}
+tbody{
+   font-size:xx-small;
+   color: #ffffff;
+}
+div.container {
+padding-left:initial;
+
+}
+td{
+  font-size: medium;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-style:oblique;
+  height: 50px;
+  vertical-align:middle;
+}
+h1{
+   font-size:medium;
+   font-style: oblique;
+   color:#ffffff;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 45px;
+  height: 75px;
+  border-radius: 25%;
+}
+input[type=text] {
+  width: 100%;
+  padding: 1px 0px;
+  margin: 2px 1px;
+  box-sizing:initial; 
+}
+.column {
+  float: left;
+  width: 20%;
+  border-width:initial;
+  
+}
+.col {
+  float: left;
+  width: 50%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-group input[type=submit],
+.form-group label {
+    text-transform: uppercase
+}
+
+.form-group label{
+    color:#000000;
+    font-size:medium;
+    font-style: oblique;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}

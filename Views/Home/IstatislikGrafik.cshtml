@@ -1,0 +1,47 @@
+@model BankTransactions.Models.Gazlicecek
+@{
+  Layout = "~/Views/Shared/_Layout.cshtml";
+   ViewData["Title"] = "Grafik Screen- Tüm Data...";
+  
+} 
+
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: [@foreach(var item in ViewBag.disMarka)
+                        {
+                            @: '@(item.Markalar)',
+                        },"Toplam Kayıt"], 
+      datasets: [{
+        label: 'Markaya ait kayıt sayisi | Toplam Kayit',
+        data:[@foreach(var item in ViewBag.disCount)
+                        {
+                            @: '@(item.MarkaCount)',
+                        },@ViewData["ToplamKayit"]],
+        borderWidth: 1,
+         borderColor: '#ffc305',
+      backgroundColor: '#ffc305',
+      pointLabelFontColor : '#ffc305'
+      
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+      
+    }
+  });
+</script>
+ 

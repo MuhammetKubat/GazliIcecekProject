@@ -1,0 +1,84 @@
+@model BankTransactions.Models.Gazlicecek
+@{
+    ViewData["Title"] = "GazlicecekProfileUpload - Tüm Data...";
+}
+
+
+
+  <script src="~/lib/jquery/dist/jqueryPic.js">
+        </script>
+
+
+<h1> Gazlı İçecek & Data Girişi | Yeni Oluştur </h1>
+<hr />
+<div class="row">
+    <div class="coll-md-4">
+        <form asp-action="GazlicecekProfileUpload" enctype="multipart/form-data" method="post">
+
+           <div class="row">
+                <div class="column"><input type="text" class="form-control" asp-for="Marka" placeholder=" Marka"></div> 
+                <div  class="column"> <input type="text" asp-for="Tur" class="form-control" placeholder="Tur"></div>
+                <div  class="column"> <input type="text" asp-for="Boyut" class="form-control" placeholder="Boyut"></div>
+                <div  class="column"> <input type="text" asp-for="Detail" class="form-control" placeholder="Detail"></div>
+                <div  class="column"> <input type="text" asp-for="Seker" class="form-control" placeholder="Seker"></div>
+                <div  class="column"> <input type="text" asp-for="Calories" class="form-control" placeholder="Calories"></div>
+                <div  class="column"> <input type="text" asp-for="Carbohydrates" class="form-control" placeholder="Carbohydrates"></div>
+                <div  class="column"> <input type="text" asp-for="Ulke" class="form-control" placeholder="Ulke"></div>
+                <div  class="column"> <input type="text" asp-for="Ozellik1" class="form-control" placeholder="Ozellik1">
+                </div>
+                <div  class="column"> <input type="text" asp-for="Ozellik2" class="form-control" placeholder="Ozellik2">
+                </div>
+                <div  class="column"> <input type="text" asp-for="Ozellik3" class="form-control" placeholder="Ozellik3">
+                </div>
+                
+                <div  class="column"> <input type="text"  type="date"  value="2022-12-15"
+       min="2000-01-01" max="2023-01-23"asp-for="KYili" class="form-control" placeholder="KYili"></div>
+
+              <div class="col"><input type="text"  type="file" asp-for="ImageFile" class="form-control"
+                        placeholder="ImageFile"></div>
+                                                   <div class="column"> <input type="submit" value="Create" class="btn btn-primary" /> </div>
+
+             <div class="holder">
+                <img id="imgPreview"  src="#" alt="pic" />
+            </div>
+            </div>
+        </form>
+<style>
+            .holder {
+                height: 320px;
+                width: 650px;
+                border: 0px solid white;
+            }
+            img {
+                max-width: 650px;
+                max-height: 320px;
+                min-width: 650px;
+                min-height: 320px;
+            }
+            input[type="file"] {
+                margin-top: 5px;
+            }
+            .heading {
+                font-family: Montserrat;
+                font-size: 45px;
+                color: green;
+            }
+        </style>
+        <script>
+            $(document).ready(() => {
+                $("#ImageFile").change(function () {
+                    const file = this.files[0];
+                    if (file) {
+                        let reader = new FileReader();
+                        reader.onload = function (event) {
+                            $("#imgPreview")
+                              .attr("src", event.target.result);
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+            });
+        </script>
+    </div>
+
+</div>

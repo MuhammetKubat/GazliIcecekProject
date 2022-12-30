@@ -1,0 +1,79 @@
+@using Microsoft.AspNetCore
+@model IEnumerable<BankTransactions.Models.Gazlicecek>
+@{
+    ViewData["Title"] = "GazlicecekListing";
+}
+<table>
+    <tr>
+        <th> <a asp-action="IstatislikGrafik" style="font-size:0px" class="btn btn-outline-primary">
+                <i class="fa-solid fa-chart-area" style="font-size:15px"></i> Grafik
+            </a>
+
+        </th>
+
+        <th>
+            <br>
+
+        </th>
+
+        <th>
+            <a asp-action="GazlicecekProfileUpload" style="font-size:0px" class="btn btn-outline-primary">
+                <i class="fa-solid fa-plus" style="font-size:15px"></i> Yeni Oluştur
+            </a>
+        </th>
+        <th>
+            <br><br><br>    
+        </th>
+        <th>
+            <h1>Gazli İçecek Listesi | Aşağıdaki tüm veriler Sql Server'den çekilmiştir.</h1>
+        </th>
+    </tr>
+    <table class="table" >
+        <thead>
+            <tr>
+                <th> @Html.DisplayNameFor(model=>model.Id)</th>
+                <th> @Html.DisplayNameFor(model=>model.IcecekPath)</th>
+                <th> @Html.DisplayNameFor(model=>model.Marka)</th>
+                <th> @Html.DisplayNameFor(model=>model.Tur)</th>
+                <th> @Html.DisplayNameFor(model=>model.Boyut)</th>
+                <th> @Html.DisplayNameFor(model=>model.Detail)</th>
+                <th> @Html.DisplayNameFor(model=>model.Seker)</th>
+                <th> @Html.DisplayNameFor(model=>model.Calories)</th>
+                <th> @Html.DisplayNameFor(model=>model.Carbohydrates)</th>
+                <th> @Html.DisplayNameFor(model=>model.Ulke)</th>
+                <th> @Html.DisplayNameFor(model=>model.Ozellik1)</th>
+                <th> @Html.DisplayNameFor(model=>model.Ozellik2)</th>
+                <th> @Html.DisplayNameFor(model=>model.Ozellik3)</th>
+                <th> @Html.DisplayNameFor(model=>model.KYili)</th>
+
+                <th>
+                </th>
+            </tr>
+        </thead>
+        <tbody class="scrollContent">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(ModelItem => item.Id)</td>
+                    <td>
+                        <img decoding="async" src="@Url.Content("~/UploadedImages/"+@item.IcecekFileName)"
+                        asp-append-version="true" alt="Avatar" class="avatar" />
+                    </td>
+
+                    <td>@Html.DisplayFor(ModelItem => item.Marka)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.Tur)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.Boyut)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.Detail)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.Seker)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.Calories)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.Carbohydrates)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.Ulke)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.Ozellik1)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.Ozellik2)</td>
+                    <td>@Html.DisplayFor(ModelItem => item.Ozellik3)</td>
+                    <td style="font-size:11px">@Html.DisplayFor(ModelItem => item.KYili)</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>

@@ -1,8 +1,3 @@
-- 👋 Hi, I’m @MuhammetKubat
-- 👀 I’m interested in VsCode 
-- 🌱 I’m currently learning C#
-- 💞️ I’m looking to collaborate on __-
-- 📫 How to reach me @
 
 ## Table of contents
 * [ Genel Bilgi ](#Genel-Bilgi )
@@ -60,5 +55,10 @@ Tüm Kurulum adım adım proje debug süreci aşağıdaki adımları izleyebilir
 ![image](https://user-images.githubusercontent.com/38388188/210082048-5f4a18c8-f17d-4494-ac9f-58da66dc6ef5.png)
 ![image](https://user-images.githubusercontent.com/38388188/210082119-655c8be8-14ec-4991-abb7-d5a9c0091a79.png)
 ![image](https://user-images.githubusercontent.com/38388188/210082348-6dfbaa27-fd23-4d46-a8bc-45d290fa3ebb.png)
+- 👋 Hi, I’m @MuhammetKubat
+- 👀 I’m interested in VsCode 
+- 🌱 I’m currently learning C#
+- 💞️ I’m looking to collaborate on __-
+- 📫 How to reach me @
 
 
